@@ -22,4 +22,9 @@ public class Pausa : MonoBehaviour
         Time.timeScale = 1f;
         Menu_Pausa.SetActive(false);
     }
+
+    public void Quitar()
+    {
+        Application.Quit();
+    }
 }
