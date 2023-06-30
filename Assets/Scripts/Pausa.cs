@@ -3,11 +3,11 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine.UI;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Pausa : MonoBehaviour
 {
     public GameObject Menu_Pausa;
-    public Button Continuar;
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Escape)) 
@@ -26,5 +26,11 @@ public class Pausa : MonoBehaviour
     public void Quitar()
     {
         Application.Quit();
+    }
+
+    public void Reiniciar()
+    {
+        SceneManager.LoadScene("Tryout_Playground");
+        Time.timeScale = 1f;
     }
 }
