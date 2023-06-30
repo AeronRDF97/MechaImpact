@@ -108,6 +108,7 @@ public class Character : MonoBehaviour
             if(_misileShots <= 0)
             {
                 BMisile = false;
+                MisileDummy.SetActive(true);
             }
         }
     }

@@ -45,8 +45,9 @@ GameObject:
   - component: {fileID: 5347706285714163618}
   - component: {fileID: 5347706285714163629}
   - component: {fileID: 5347706285714163628}
-  - component: {fileID: 5347706285714163631}
-  - component: {fileID: 5347706285714163630}
+  - component: {fileID: 4756419111191693181}
+  - component: {fileID: 5430909390140942543}
+  - component: {fileID: 5974301331222000644}
   m_Layer: 0
   m_Name: Enemy_Boss
   m_TagString: Enemy
@@ -179,8 +180,8 @@ NavMeshAgent:
   m_BaseOffset: 1
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
---- !u!136 &5347706285714163631
-CapsuleCollider:
+--- !u!65 &4756419111191693181
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -189,12 +190,11 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 0.99
-  m_Height: 5.47
-  m_Direction: 2
-  m_Center: {x: -7.35, y: -0.22, z: -0.99}
---- !u!136 &5347706285714163630
-CapsuleCollider:
+  serializedVersion: 2
+  m_Size: {x: 4.76, y: 3.11, z: 3.63}
+  m_Center: {x: 0, y: 2.7, z: -0.79}
+--- !u!65 &5430909390140942543
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -203,10 +203,22 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 0.99
-  m_Height: 5.47
-  m_Direction: 2
-  m_Center: {x: 7.35, y: -0.22, z: -0.99}
+  serializedVersion: 2
+  m_Size: {x: 3.45, y: 1.85, z: 4.86}
+  m_Center: {x: 7.27, y: 0.04, z: -0.81}
+--- !u!65 &5974301331222000644
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5347706285714163625}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 3.45, y: 1.85, z: 4.86}
+  m_Center: {x: -7.27, y: 0.04, z: -0.81}
 --- !u!1001 &5347706286629458419
 PrefabInstance:
   m_ObjectHideFlags: 0
