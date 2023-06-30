@@ -20,21 +20,20 @@ public class Character : MonoBehaviour
     private bool _isShooting3;
     public bool BMisile;
     public int _misileShots;
+    public Transform SpawnShoot_1;
+    public Transform SpawnShoot_2;
+    public Transform SpawnShoot_3;
 
     private Vector3 moveDirection = Vector3.zero;
     private CharacterController controller;
     //private int jumps;
 
-
-    // Start is called before the first frame update
     void Start()
     {
         BMisile = false;
         _misileShots = 0;
         controller = GetComponent<CharacterController>();
     }
-
-    // Update is called once per frame
     void Update()
     {
         
@@ -60,13 +59,13 @@ public class Character : MonoBehaviour
         controller.Move(moveDirection * Time.deltaTime);
 
         //Shooting
-        _isShooting |= Input.GetMouseButtonDown(0);
-        _isShooting2 |= Input.GetMouseButtonDown(1);
-        _isShooting3 |= Input.GetKeyDown(KeyCode.E);
-
+        if (Input.GetMouseButton(1))
+        {
+            _isShooting |= Input.GetMouseButtonDown(0);
+            _isShooting2 |= Input.GetKeyDown(KeyCode.G);
+            _isShooting3 |= Input.GetKeyDown(KeyCode.E);
+        }
     }
-
-
     private void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.name == "misil")
@@ -76,55 +75,34 @@ public class Character : MonoBehaviour
             MisileDummy.SetActive(false);
         }
     }
-
     private void FixedUpdate()
     {
         if (_isShooting)
         {
-            // 5
-            GameObject newBullet = Instantiate(Rocket_Punch,
-                this.transform.position + new Vector3(1.5f, 1, 0),
-                this.transform.rotation); // 6
-            Rigidbody BulletRB =
-                 newBullet.GetComponent<Rigidbody>();
-            // 7
-            BulletRB.velocity = this.transform.forward *
-                                            BulletSpeed;
+            GameObject newBullet = Instantiate(Rocket_Punch, SpawnShoot_1.transform.position, SpawnShoot_1.transform.rotation); 
+            Rigidbody BulletRB = newBullet.GetComponent<Rigidbody>(); 
+            BulletRB.velocity = this.transform.forward * BulletSpeed;
         }
-        // 8
+        
         _isShooting = false;
 
         if (_isShooting2)
         {
-            // 5
-            GameObject newBullet_L = Instantiate(Iron_Cutter,
-                this.transform.position + new Vector3(-1.5f, 1, 0),
-                this.transform.rotation); // 6
-            Rigidbody Bullet_LRB =
-                 newBullet_L.GetComponent<Rigidbody>();
-            // 7
-            Bullet_LRB.velocity = this.transform.forward *
-                                            BulletSpeed;
+            GameObject newBullet_L = Instantiate(Iron_Cutter, SpawnShoot_2.transform.position, SpawnShoot_2.transform.rotation); 
+            Rigidbody Bullet_LRB = newBullet_L.GetComponent<Rigidbody>();
+            Bullet_LRB.velocity = this.transform.forward * BulletSpeed;
         }
-        // 8
         _isShooting2 = false;
 
        if (BMisile == true)
         {
             if (_isShooting3)
             {
-                _misileShots --;
-                // 5
-                GameObject newBullet_M = Instantiate(Misile,
-                    this.transform.position + new Vector3(0, 3, 0),
-                    this.transform.rotation); // 6
-                Rigidbody Misile_RB =
-                     newBullet_M.GetComponent<Rigidbody>();
-                // 7
-                Misile_RB.velocity = this.transform.forward *
-                                                BulletSpeed;
+                _misileShots --;               
+                GameObject newBullet_M = Instantiate(Misile, SpawnShoot_3.transform.position, SpawnShoot_3.transform.rotation); 
+                Rigidbody Misile_RB = newBullet_M.GetComponent<Rigidbody>();
+                Misile_RB.velocity = this.transform.forward * BulletSpeed;
             }
-            // 8
             _isShooting3 = false;
 
             if(_misileShots <= 0)
