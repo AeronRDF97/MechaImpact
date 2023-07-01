@@ -253,9 +253,9 @@ MonoBehaviour:
   MisileDummy: {fileID: 0}
   BMisile: 0
   _misileShots: 0
-  SpawnShoot_1: {fileID: 0}
-  SpawnShoot_2: {fileID: 0}
-  SpawnShoot_3: {fileID: 0}
+  SpawnShoot_1: {fileID: 3048423773766112760}
+  SpawnShoot_2: {fileID: 8843796445077277287}
+  SpawnShoot_3: {fileID: 8502346026361553112}
 --- !u!143 &6452062707217323055
 CharacterController:
   m_ObjectHideFlags: 0
@@ -304,7 +304,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 10
   healthBar: {fileID: 0}
-  Mecha: {fileID: 0}
+  Mecha: {fileID: 8344985264926272692}
 --- !u!1 &6452062707817800705
 GameObject:
   m_ObjectHideFlags: 0
@@ -486,6 +486,11 @@ Transform:
 --- !u!4 &7672708370904514406 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -7677280911063486845, guid: 0ceb359001cffe34d8938c2cd0b95277, type: 3}
+  m_PrefabInstance: {fileID: 9155323482995790309}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &8344985264926272692 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 0ceb359001cffe34d8938c2cd0b95277, type: 3}
   m_PrefabInstance: {fileID: 9155323482995790309}
   m_PrefabAsset: {fileID: 0}
 --- !u!4 &8684214750981977614 stripped
