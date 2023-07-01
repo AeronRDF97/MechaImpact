@@ -12,6 +12,6 @@ public class Menu_inicio : MonoBehaviour
 
     public void Iniciar()
     {
-        SceneManager.LoadScene("Tryout_Playground");
+        SceneManager.LoadScene("Escenario");
     }
 }

@@ -30,7 +30,7 @@ public class Pausa : MonoBehaviour
 
     public void Reiniciar()
     {
-        SceneManager.LoadScene("Tryout_Playground");
+        SceneManager.LoadScene("Escenario");
         Time.timeScale = 1f;
     }
 }

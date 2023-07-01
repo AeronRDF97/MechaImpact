@@ -11,4 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Tryout_Playground.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 1
+    path: Assets/Scenes/Escenario.unity
+    guid: 4a4012b37076dec44977e8b0c617f984
   m_configObjects: {}

@@ -840,25 +840,6 @@ Transform:
   m_Father: {fileID: 2072373260}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1961053996 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6452062707817800705, guid: b1e06fe9fd7a11946bcd6e3d5977cd2d, type: 3}
-  m_PrefabInstance: {fileID: 6452062707438799216}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1961054000
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1961053996}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fbea06557b7050f42a051e2efb1a281f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CamOffset: {x: 0, y: 1.5, z: -6}
-  Camfirst: {x: 0, y: 0, z: 0}
 --- !u!1 &2072373259
 GameObject:
   m_ObjectHideFlags: 0
@@ -1309,6 +1290,18 @@ PrefabInstance:
       propertyPath: m_Radius
       value: 1.4
       objectReference: {fileID: 0}
+    - target: {fileID: 6452062707217323051, guid: b1e06fe9fd7a11946bcd6e3d5977cd2d, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6452062707217323051, guid: b1e06fe9fd7a11946bcd6e3d5977cd2d, type: 3}
+      propertyPath: m_Center.y
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6452062707217323051, guid: b1e06fe9fd7a11946bcd6e3d5977cd2d, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6452062707217323052, guid: b1e06fe9fd7a11946bcd6e3d5977cd2d, type: 3}
       propertyPath: m_Enabled
       value: 0
@@ -1356,6 +1349,14 @@ PrefabInstance:
     - target: {fileID: 6452062707217323054, guid: b1e06fe9fd7a11946bcd6e3d5977cd2d, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6452062707217323055, guid: b1e06fe9fd7a11946bcd6e3d5977cd2d, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6452062707217323055, guid: b1e06fe9fd7a11946bcd6e3d5977cd2d, type: 3}
+      propertyPath: m_Center.y
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6452062707817800708, guid: b1e06fe9fd7a11946bcd6e3d5977cd2d, type: 3}
       propertyPath: m_LocalRotation.w
