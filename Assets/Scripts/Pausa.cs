@@ -21,16 +21,19 @@ public class Pausa : MonoBehaviour
     {
         Time.timeScale = 1f;
         Menu_Pausa.SetActive(false);
+        Debug.Log("Continuar");
     }
 
     public void Quitar()
     {
         Application.Quit();
+        Debug.Log("Exit");
     }
 
     public void Reiniciar()
     {
         SceneManager.LoadScene("Escenario");
         Time.timeScale = 1f;
+        Debug.Log("Try Again");
     }
 }

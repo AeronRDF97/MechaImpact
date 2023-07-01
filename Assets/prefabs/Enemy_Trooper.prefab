@@ -120,13 +120,13 @@ MonoBehaviour:
   Locations:
   - {fileID: 0}
   - {fileID: 0}
-  - {fileID: 0}
   Player: {fileID: 0}
   timer: 1
   enemyBullet: {fileID: 3789179475796925043, guid: f9be89437be12bc4488e83dfa35f4550, type: 3}
   spawnPoint: {fileID: 6037831107247630011}
-  EbulletSpeed: 50
+  EbulletSpeed: 25
   IsHere: 0
+  _lives: 5
 --- !u!195 &6037831106279739030
 NavMeshAgent:
   m_ObjectHideFlags: 0
