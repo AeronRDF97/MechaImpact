@@ -43,11 +43,11 @@ GameObject:
   - component: {fileID: 5347706285714163616}
   - component: {fileID: 5347706285714163619}
   - component: {fileID: 5347706285714163618}
-  - component: {fileID: 5347706285714163629}
   - component: {fileID: 5347706285714163628}
   - component: {fileID: 4756419111191693181}
   - component: {fileID: 5430909390140942543}
   - component: {fileID: 5974301331222000644}
+  - component: {fileID: 4825042523299232847}
   m_Layer: 0
   m_Name: Enemy_Boss
   m_TagString: Enemy
@@ -137,27 +137,6 @@ CapsuleCollider:
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &5347706285714163629
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5347706285714163625}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 01634b8cba396c948ad344d26c2340e8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  PatrolRoute: {fileID: 0}
-  Locations: []
-  Player: {fileID: 0}
-  timer: 1
-  enemyBullet: {fileID: 3789179475796925043, guid: f9be89437be12bc4488e83dfa35f4550, type: 3}
-  spawnPoint: {fileID: 5347706285703330271}
-  EbulletSpeed: 50
-  IsHere: 0
-  _lives: 20
 --- !u!195 &5347706285714163628
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -219,6 +198,30 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 3.45, y: 1.85, z: 4.86}
   m_Center: {x: -7.27, y: 0.04, z: -0.81}
+--- !u!114 &4825042523299232847
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5347706285714163625}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc88e629e82a173499ed3e6ad90256fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PatrolRoute: {fileID: 0}
+  Locations:
+  - {fileID: 0}
+  - {fileID: 0}
+  Player: {fileID: 0}
+  Key: {fileID: 0}
+  timer: 5
+  enemyBullet: {fileID: 3789179475796925043, guid: f9be89437be12bc4488e83dfa35f4550, type: 3}
+  spawnPoint: {fileID: 5347706285703330271}
+  EbulletSpeed: 25
+  IsHere: 0
+  _lives: 20
 --- !u!1001 &5347706286629458419
 PrefabInstance:
   m_ObjectHideFlags: 0

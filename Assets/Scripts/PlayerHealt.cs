@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerHealt : MonoBehaviour
 {
@@ -9,11 +10,17 @@ public class PlayerHealt : MonoBehaviour
     public HealthBar healthBar;
     public GameObject Mecha;
 
+    public GameObject re_startButton;
+    public GameObject EndgameMenu;
+
     private void Start()
     {
         currentHealth = maxHealth;
 
         healthBar.SetSliderMax(maxHealth);
+
+        re_startButton.SetActive(false);
+        EndgameMenu.SetActive(false);
     }
 
     public void TakeDamage(float amount)
@@ -42,7 +49,10 @@ public class PlayerHealt : MonoBehaviour
 
         if (currentHealth <= 0)
         {
-            Mecha.SetActive(false); 
+            Mecha.SetActive(false);
+            re_startButton.SetActive(true);
+            EndgameMenu.SetActive(true);
+            Time.timeScale = 0;
         }
     }
 
@@ -57,5 +67,11 @@ public class PlayerHealt : MonoBehaviour
         {
             TakeDamage(2f);
         }
+    }
+
+    public void OnceAgain()
+    {
+        SceneManager.LoadScene("Escenario");
+        Time.timeScale = 1f;
     }
 }
