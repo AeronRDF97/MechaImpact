@@ -1014,6 +1014,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy_Trooper 2
       objectReference: {fileID: 0}
+    - target: {fileID: 4707689914224707165, guid: aaa36b7f6d694da4cba0e82158536265, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4707689914224707172, guid: aaa36b7f6d694da4cba0e82158536265, type: 3}
       propertyPath: m_RootOrder
       value: 10
@@ -1117,6 +1121,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy_Boss
       objectReference: {fileID: 0}
+    - target: {fileID: 5347706285714163625, guid: badf082517e572443844fcc738971545, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5347706285714163629, guid: badf082517e572443844fcc738971545, type: 3}
       propertyPath: Player
       value: 
@@ -1218,6 +1226,10 @@ PrefabInstance:
     - target: {fileID: 6037831106279739020, guid: 266156272d81f3448b6554dea1af9594, type: 3}
       propertyPath: m_Name
       value: Enemy_Trooper
+      objectReference: {fileID: 0}
+    - target: {fileID: 6037831106279739020, guid: 266156272d81f3448b6554dea1af9594, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6037831106279739031, guid: 266156272d81f3448b6554dea1af9594, type: 3}
       propertyPath: m_RootOrder

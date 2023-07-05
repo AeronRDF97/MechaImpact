@@ -227,7 +227,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c2408a564ae9b9749be3dc17fc104fe3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  healAmount: 10
+  healAmount: 20
+  degreesPerSecond: 15
+  amplitude: 0.1
+  frequency: 1
 --- !u!1 &9155080862760354944
 GameObject:
   m_ObjectHideFlags: 0

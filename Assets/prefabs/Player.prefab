@@ -302,7 +302,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 277f7a3461b84e94782c633fc8622fb7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 10
+  maxHealth: 20
   healthBar: {fileID: 0}
   Mecha: {fileID: 8344985264926272692}
   re_startButton: {fileID: 0}
