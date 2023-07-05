@@ -14,7 +14,7 @@ public class Character : MonoBehaviour
     public GameObject Iron_Cutter;
     public float BulletSpeed = 100f;
     public GameObject Misile;
-    public GameObject MisileDummy;
+    public GameObject misileholder;
     private bool _isShooting;
     private bool _isShooting2;
     private bool _isShooting3;
@@ -68,11 +68,11 @@ public class Character : MonoBehaviour
     }
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.name == "misil")
+        if (collision.gameObject.tag == "misil")
         {
             BMisile = true;
             _misileShots = 5;
-            MisileDummy.SetActive(false);
+            misileholder.SetActive(false);
         }
     }
     private void FixedUpdate()
@@ -108,7 +108,7 @@ public class Character : MonoBehaviour
             if(_misileShots <= 0)
             {
                 BMisile = false;
-                MisileDummy.SetActive(true);
+                misileholder.SetActive(true);
             }
         }
     }
