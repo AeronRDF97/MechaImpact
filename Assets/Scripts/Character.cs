@@ -7,7 +7,7 @@ public class Character : MonoBehaviour
     public float speed = 6.0f;
     public float dspeed = 52.0f;
     public float rotateSpeed = 20.0f;
-    public float jumpSpeed = 8.0f;
+    public float jumpSpeed = 1.0f;
     public float gravity = 20.0f;
 
     public GameObject Rocket_Punch;
@@ -36,20 +36,20 @@ public class Character : MonoBehaviour
     }
     void Update()
     {
-        
         //Movement
         if (controller.isGrounded)
         {
             moveDirection = new Vector3(0, 0, Input.GetAxis("Vertical"));
             moveDirection = transform.TransformDirection(moveDirection);
             moveDirection *= speed;
-            if (Input.GetKeyDown(KeyCode.Space))
-            {
-                moveDirection.y = jumpSpeed;
-            }
+            
             if (Input.GetKeyDown(KeyCode.Q))
             {
                 moveDirection *= dspeed;
+            }
+            if (this.transform.position.y<-0.3)
+            {
+              moveDirection.y = jumpSpeed;
             }
         }
 
