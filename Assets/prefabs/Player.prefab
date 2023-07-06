@@ -228,7 +228,7 @@ CapsuleCollider:
   m_Radius: 0.74
   m_Height: 3.28
   m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Center: {x: 0, y: 1.6, z: 0}
 --- !u!114 &6452062707217323050
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -250,7 +250,7 @@ MonoBehaviour:
   Iron_Cutter: {fileID: 1867123637011521061, guid: c67a281decb826342b03ab5600b15429, type: 3}
   BulletSpeed: 50
   Misile: {fileID: 1027804336310231440, guid: 2a5eecd1cb50d314aa840c7dfe91505a, type: 3}
-  MisileDummy: {fileID: 0}
+  misileholder: {fileID: 0}
   BMisile: 0
   _misileShots: 0
   SpawnShoot_1: {fileID: 3048423773766112760}

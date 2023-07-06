@@ -12,7 +12,7 @@ public class Character : MonoBehaviour
 
     public GameObject Rocket_Punch;
     public GameObject Iron_Cutter;
-    public float BulletSpeed = 100f;
+    public float BulletSpeed = 50f;
     public GameObject Misile;
     public GameObject misileholder;
     private bool _isShooting;
