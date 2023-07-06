@@ -47,7 +47,7 @@ public class Character : MonoBehaviour
             {
                 moveDirection *= dspeed;
             }
-            if (this.transform.position.y<-0.3)
+            if (this.transform.position.y<-0.36)
             {
               moveDirection.y = jumpSpeed;
             }
