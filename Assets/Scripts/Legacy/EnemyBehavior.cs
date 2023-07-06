@@ -10,6 +10,7 @@ public class EnemyBehavior : MonoBehaviour
     public Transform PatrolRoute;
     public List<Transform> Locations;
     public Transform Player;
+    public GameObject lockedDoor;
 
     //shoot
     [SerializeField] private float timer = 5;
@@ -36,6 +37,7 @@ public class EnemyBehavior : MonoBehaviour
             {
                 Destroy(this.gameObject);
                 Debug.Log("Enemy down.");
+                lockedDoor.SetActive(false);
             }
         }
     }
