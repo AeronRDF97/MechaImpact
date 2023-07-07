@@ -47,10 +47,10 @@ public class Character : MonoBehaviour
             {
                 moveDirection *= dspeed;
             }
-            if (this.transform.position.y<-0.36)
-            {
-              moveDirection.y = jumpSpeed;
-            }
+            //if (this.transform.position.y<-0.36)
+            //{
+             // moveDirection.y = jumpSpeed;
+            //}
         }
 
 
