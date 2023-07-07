@@ -9,6 +9,7 @@ public class BossBehavior : MonoBehaviour
     public List<Transform> Locations;
     public Transform Player;
     public GameObject Key;
+    public GameObject door;
 
     //shoot
     [SerializeField] private float timer = 5;
@@ -36,6 +37,7 @@ public class BossBehavior : MonoBehaviour
                 Destroy(this.gameObject);
                 Debug.Log("Enemy down.");
                 Key.SetActive(true);
+                door.SetActive(false);
             }
         }
     }

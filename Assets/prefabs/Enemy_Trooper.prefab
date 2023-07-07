@@ -121,6 +121,7 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   Player: {fileID: 0}
+  lockedDoor: {fileID: 0}
   timer: 1
   enemyBullet: {fileID: 3789179475796925043, guid: f9be89437be12bc4488e83dfa35f4550, type: 3}
   spawnPoint: {fileID: 6037831107247630011}
@@ -159,8 +160,8 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 0.43
-  m_Height: 3.22
+  m_Radius: 0.63
+  m_Height: 3.75
   m_Direction: 1
   m_Center: {x: 0, y: 0.59, z: 0}
 --- !u!1 &6037831107247630012

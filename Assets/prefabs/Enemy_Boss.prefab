@@ -216,12 +216,13 @@ MonoBehaviour:
   - {fileID: 0}
   Player: {fileID: 0}
   Key: {fileID: 0}
+  door: {fileID: 0}
   timer: 5
   enemyBullet: {fileID: 3789179475796925043, guid: f9be89437be12bc4488e83dfa35f4550, type: 3}
   spawnPoint: {fileID: 5347706285703330271}
   EbulletSpeed: 25
   IsHere: 0
-  _lives: 20
+  _lives: 30
 --- !u!1001 &5347706286629458419
 PrefabInstance:
   m_ObjectHideFlags: 0

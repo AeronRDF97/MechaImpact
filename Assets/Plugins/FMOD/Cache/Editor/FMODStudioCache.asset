@@ -22,8 +22,32 @@ MonoBehaviour:
   - {fileID: 3147091716167586523}
   StringsBanks:
   - {fileID: 3725107108294732686}
-  cacheTime: 638241645075071159
+  cacheTime: 638242505280000000
   cacheVersion: 131603
+--- !u!114 &2158848045662598013
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: "parameter:/M\xFAsica/Volume"
+  m_EditorClassIdentifier: 
+  Name: Volume
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 1
+  ID:
+    data1: 269915049
+    data2: 1845682934
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
 --- !u!114 &3147091716167586523
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -39,7 +63,7 @@ MonoBehaviour:
   Path: Build/Desktop/Master.bank
   Name: Desktop/Master
   StudioPath: bank:/Master
-  lastModified: 638241645075001148
+  lastModified: 638242505280000000
   FileSizes: []
   Exists: 1
 --- !u!114 &3725107108294732686
@@ -57,10 +81,10 @@ MonoBehaviour:
   Path: Build/Desktop/Master.strings.bank
   Name: Desktop/Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638241645075071159
+  lastModified: 638242505280000000
   FileSizes:
   - Name: 
-    Value: 804
+    Value: 856
   Exists: 1
 --- !u!114 &8113886359222824292
 MonoBehaviour:
@@ -72,13 +96,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: "parameter:/M\xFAsica/Health"
+  m_Name: "parameter:/M\xFAsica/Bossfight"
   m_EditorClassIdentifier: 
-  Name: Health
+  Name: Bossfight
   StudioPath: 
   Min: 0
   Max: 1
-  Default: 1
+  Default: 0
   ID:
     data1: 89840272
     data2: 2939068531
@@ -111,6 +135,7 @@ MonoBehaviour:
   IsOneShot: 0
   Parameters:
   - {fileID: 8113886359222824292}
+  - {fileID: 2158848045662598013}
   MinDistance: 1
   MaxDistance: 20
   Length: 78400
